@@ -1,0 +1,116 @@
+/* Pricing Page External CSS */
+
+.pricing-card {
+  cursor: pointer;
+}
+
+.pricing-coin-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.pricing-coin-placeholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #333;
+}
+
+.pricing-sparkline-container {
+  height: 60px;
+}
+
+.pricing-watchlist-btn {
+  background: none;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  border-radius: 4px;
+  font-size: 1.3em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pricing-watchlist-btn.active,
+.pricing-watchlist-btn:hover {
+  background: #ffc107;
+  color: #181818;
+}
+
+/* Welcome Text Styling */
+.pricing-welcome-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.pricing-welcome-text {
+  color: #d1d1e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+ 

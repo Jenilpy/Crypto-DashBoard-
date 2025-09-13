@@ -1,0 +1,207 @@
+/* Home Page External CSS */
+
+.home-hero-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: none;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.home-hero-content {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.home-title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.home-subtitle {
+  color: #d1d1e0;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  gap: 0.5rem;
+}
+
+.home-search-input {
+  flex: 1;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #333;
+  background: #181818;
+  color: #fff;
+}
+
+.home-search-btn {
+  background: #7b2ff2;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-search-btn:hover:not(:disabled) {
+  background: #6a1fd1;
+}
+
+.home-search-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.home-table-section {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.home-table {
+  width: 100%;
+  background: #181818;
+  color: #fff;
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.home-table th, .home-table td {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.home-table th {
+  background: #23234a;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+.home-table-row {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.home-table-row:hover {
+  background: #23234a;
+}
+
+.home-table-rank {
+  font-weight: bold;
+}
+
+.home-coin-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.home-coin-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.home-coin-name {
+  font-weight: bold;
+}
+
+.home-coin-symbol {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.home-table-price {
+  font-weight: bold;
+}
+
+.home-price-up {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.home-price-down {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.home-table-marketcap {
+  font-weight: 500;
+}
+
+.home-table-watchlist {
+  text-align: center;
+}
+
+.home-watchlist-btn {
+  background: none;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  border-radius: 4px;
+  font-size: 1.3em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.home-watchlist-btn.active,
+.home-watchlist-btn:hover {
+  background: #ffc107;
+  color: #181818;
+}
+
+.home-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.home-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.4em solid #7b2ff2;
+  border-top: 0.4em solid #fff;
+  border-radius: 50%;
+  animation: home-spin 1s linear infinite;
+}
+
+@keyframes home-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+ 
